@@ -1,0 +1,8 @@
+{"path":{
+    "corpus":"./data/Nammour_Fadi_va2.pdf",
+    "prompt":"./prompt_fr.json"
+    },
+ "llm":{
+    "model":"llama3.1:8b"
+    }
+}
