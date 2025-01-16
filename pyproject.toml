@@ -1,0 +1,22 @@
+[project]
+name = "PhDChatbot"
+version = "0.1.0"
+description = "A chatbot that answer questions based on your PhD work."
+authors = [
+    {name = "Fadi NAMMOUR",email = "fadinammour95@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "gradio (>=5.11.0,<6.0.0)",
+    "langchain (>=0.3.14,<0.4.0)",
+    "langchain-chroma (>=0.2.0,<0.3.0)",
+    "langchain-ollama (>=0.2.2,<0.3.0)",
+    "langchain-community (>=0.3.14,<0.4.0)",
+    "pymupdf (>=1.25.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
