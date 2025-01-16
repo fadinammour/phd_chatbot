@@ -43,4 +43,4 @@ def get_answer(message, history):
 with gr.Blocks() as page:
     gr.ChatInterface(fn=get_answer, examples=["C'est quoi un problème inverse?"], title="Fadi's PhD Q&A Bot")
     
-page.launch()
+page.launch(share=True)
