@@ -38,6 +38,8 @@ qa_chain = get_qa_chain(rag_prompt, model, retriever)
 
 def get_answer(message, history):
     response = qa_chain.invoke(message)
+    response = response.replace('<think>','INTERNAL THINKING BEGIN')
+    response = response.replace('</think>','INTERNAL THINKING END')
     return response
 
 with gr.Blocks() as page:
